@@ -1,0 +1,30 @@
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+background-color: #f3f4f6; /* bg-gray-100 */
+color: #1f2937; /* text-gray-800 */
+transition: background-color 0.3s, color 0.3s;
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    background-color: #111827; /* dark:bg-gray-900 */
+    color: #ffffff; /* dark:text-white */
+}
+
+/* Blue theme */
+body.blue-theme {
+    background-color: #bfdbfe; /* bg-blue-100 */
+    color: #1e40af; /* text-blue-800 */
+}
+
+/* Green theme */
+body.green-theme {
+    background-color: #d1fae5; /* bg-green-100 */
+    color: #065f46; /* text-green-800 */
+}
+}
